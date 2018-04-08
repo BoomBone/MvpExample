@@ -1,8 +1,12 @@
 package com.example.mvp.present.view
 
+import com.example.mvp.data.Name
+
 /**
- * Created by pc on 2018/4/8.
+ * @author Ting
+ * @date 2018/4/8
+ * @function
  */
 interface MainView {
-    fun result()
+    fun result(inputName: Name)
 }
