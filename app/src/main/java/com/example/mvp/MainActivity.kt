@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity(), MainView {
         initView()
     }
 
+    /**
+     * 初始化Present
+     */
     private fun initPresent() {
         present = MainPresent()
         present.mView = this
@@ -34,7 +37,7 @@ class MainActivity : AppCompatActivity(), MainView {
     private fun initView() {
         mButton.setOnClickListener {
             val name = mName.text.toString()
-            val hobby = mName.text.toString()
+            val hobby = mHobby.text.toString()
             present.show(name, hobby)
         }
     }
